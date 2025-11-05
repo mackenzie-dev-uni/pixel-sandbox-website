@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pixel Lab - Contact Us</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts - Oswald and EB Garamond -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=EB+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root{
+            --brand: #E2725B;        /* terracotta */
+            --text: #262626;         /* near black for good contrast */
+            --bg: #FFFDF9;           /* warm ivory */
+            --muted: #FDEEE8;        /* sand/peach wash */
+        }
+        /* Background + text */
+        body{
+            font-family: 'EB Garamond', serif;
+            background: linear-gradient(135deg, var(--bg) 0%, var(--muted) 100%);
+            color: var(--text);
+        }
+        h1, h2, h3, h4, h5, h6, .logo {
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 0.5px;
+        }
+        /* Nav/Footer */
+        .navbar, footer{
+            background:#FFFFFF !important;
+            border-color: #EEE !important;
+        }
+        .navbar{
+            border-bottom: 1px solid #EEE;
+        }
+        footer{
+            border-top: 1px solid #EEE;
+        }
+        .logo{ font-weight:700; letter-spacing:.3px; }
+
+        /* Buttons */
+        .btn-brand{
+            background: var(--brand);
+            border-color: var(--brand);
+            color: #fff;
+        }
+        .btn-brand:hover{ filter: brightness(.92); color:#fff; }
+        .btn-outline-dark{ border-color:#5C5C5C; color:#333; }
+        .btn-outline-dark:hover{ background:#f3f3f3; color:#111; }
+
+        /* Cards / sections */
+        .section-muted{ background:#FFF7F1; } /* subtle beige section option */
+        .shadow-soft{ box-shadow: 0 10px 30px rgba(0,0,0,.06); }
+        .badge-soft{ background: rgba(226,114,91,.12); color:#9b4b3a; }
+
+        /* Links and focus */
+        a{ color: var(--brand); }
+        a:hover{ opacity:.9; }
+        :focus-visible{ outline: 3px solid rgba(226,114,91,.35); outline-offset: 2px; }
+        
+        :root {
+            --primary-color: #E2725B;
+            --text-color: #262626;
+            --bg-color: #FFFDF9;
+        }
+    </style>
+    
+    <!-- 🧩 HEADER PIXEL AREA -->
+    <!-- Place page-view tracking pixels here -->
+    <!-- Example pixel (commented out)
+    <img src="https://example.com/pixel.gif?event=pageview_contact" width="1" height="1" style="display:none;" />
+    -->
+    
+    <style>
+        
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--brand) !important;
+            font-size: 1.5rem;
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 0.5px;
+        }
+        
+        .nav-link {
+            color: var(--text) !important;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: var(--brand) !important;
+        }
+        
+        .contact-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            height: 100%;
+        }
+        
+        .contact-card h2 {
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-card p {
+            color: #6B7280;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-info-card {
+            background: linear-gradient(135deg, var(--brand), #D4624A);
+            color: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            height: 100%;
+        }
+        
+        .contact-info-card h3 {
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-info-item {
+            margin-bottom: 2rem;
+        }
+        
+        .contact-info-item h5 {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+        
+        .contact-info-item p {
+            font-size: 1.125rem;
+            margin: 0;
+        }
+        
+        .form-label {
+            font-weight: 500;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-control {
+            border: 1px solid #D1D5DB;
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        
+        .form-control:focus {
+            border-color: var(--brand);
+            box-shadow: 0 0 0 3px rgba(226, 114, 91, 0.1);
+        }
+        
+        footer {
+            background-color: white;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+        
+        footer p {
+            color: #6B7280;
+            margin: 0;
+        }
+        
+        footer a {
+            color: var(--brand);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">The Pixel Lab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container my-5">
+        <div class="row g-4">
+            <!-- Contact Form -->
+            <div class="col-lg-7">
+                <div class="contact-card">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                    
+                    <!-- 🧩 FORM SUBMIT PIXEL AREA (body-level for lead or contact events) -->
+                    <!-- Example pixel (commented out)
+                    <img src="https://example.com/pixel.gif?event=form_submit" width="1" height="1" style="display:none;" />
+                    -->
+                    <form action="thankyou.html" method="GET" id="contactForm">
+                        <!-- 🧩 FORM SUBMIT PIXEL -->
+                        <!-- Place form submit tracking pixel here -->
+                        <!-- Example pixel (commented out)
+                        <img src="https://example.com/pixel.gif?event=form_submit" width="1" height="1" style="display:none;" />
+                        -->
+                        
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-brand w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="col-lg-5">
+                <div class="contact-info-card">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-info-item">
+                        <h5>Email</h5>
+                        <p>hello@pixellab.com</p>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <h5>Phone</h5>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <h5>Office Hours</h5>
+                        <p>Monday - Friday<br>9:00 AM - 6:00 PM EST</p>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <h5>Address</h5>
+                        <p>123 Analytics Street<br>San Francisco, CA 94105</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 The Pixel Lab. All rights reserved. | <a href="index.html">Back to Home</a></p>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
